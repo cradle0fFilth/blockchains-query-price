@@ -22,7 +22,7 @@ name = contract.functions.name().call()
 symbol = contract.functions.symbol().call()
 
 headers = {
-'x-api-key':'private-key'}
+'x-api-key':'{private-key}'}
 
 response = requests.request("GET", token_balance, headers=headers)
 resp = response.json()
